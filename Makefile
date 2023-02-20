@@ -20,24 +20,24 @@ RM		= rm -rf
 
 AR		= ar rcs
 
-LIBP	= libft/
+LIBP	= cd libft/
 
 .c.o:
 		@$(CC) $(FLAGS) -c $<
 
 $(NAME): $(OBJS)
-	@cd $(LIBP) && make && cp libft.a ../$(NAME)
+	@$(LIBP) && make && cp libft.a ../$(NAME)
 	@$(AR) $(NAME) $(OBJS)
 
 all: $(NAME)
 
 clean:
 	@$(RM) $(OBJS)
-	@cd $(LIBP) && make clean
+	@$(LIBP) && make clean
 
 fclean: clean
 	@$(RM) $(NAME)
-	@cd $(LIBP) && make fclean
+	@$(LIBP) && make fclean
 
 re: fclean all
 
