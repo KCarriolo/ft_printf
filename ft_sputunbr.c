@@ -22,16 +22,3 @@ int	ft_sputunbr(unsigned int u)
 	free(str);
 	return (len);
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	unsigned int	u;
-	int				j;
-
-	u = 345;
-	j = ft_sputunbr(u);
-	printf("\n%i\n", j);
-	return (0);
-}*/

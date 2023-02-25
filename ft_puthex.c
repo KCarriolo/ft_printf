@@ -70,18 +70,3 @@ int	ft_puthex(unsigned int n, char k)
 	free(str);
 	return (len);
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	unsigned int	n;
-	char			c;
-	int				r;
-
-	c = 'X';
-	n = 155555;
-	r = ft_puthex(n, c);
-	printf("\n%i", r);
-	return (0);
-}*/
